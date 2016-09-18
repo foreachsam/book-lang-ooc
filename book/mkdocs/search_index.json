@@ -59,6 +59,76 @@
             "location": "/content/command/rock/#_3",
             "text": "\u57f7\u884c  $ rock --version  \u6216\u662f\u57f7\u884c  $ rock -V  \u986f\u793a  rock 0.9.11-head codename sapporo, built on Sat Sep 17 07:53:40 2016",
             "title": "\u89c0\u770b\u7248\u672c"
+        },
+        {
+            "location": "/content/quick-start/hello-ooc/",
+            "text": "hello ooc\n\n\n\u8aaa\u660e\n\n\n\u4ecb\u7d39\u5982\u4f55\u958b\u59cb\u64b0\u5beb\u7de8\u8b6fooc\u3002\n\n\n\u64cd\u4f5c\u6b65\u9a5f\n\n\n\u5efa\u7acb\u300chello\u300d\u9019\u500b\u300c\u5c08\u6848\u8cc7\u6599\u593e\u300d\u548c\u300chello/source\u300d\u9019\u500b\u8cc7\u6599\u593e\n\n\n\u57f7\u884c\n\n\n$ mkdir hello/source -p\n\n\n\n\n\u5207\u63db\u5230\u300chello\u300d\u9019\u500b\u8cc7\u6599\u593e\n\n\n\u57f7\u884c\n\n\n$ cd hello\n\n\n\n\n\u7522\u751f\u300chi.use\u300d\u9019\u500b\u6a94\n\n\n\u57f7\u884c\n\n\n$ cat \n hi.use \n EOF\nName: Hello\nDescription: Nice to meet ooc!\nVersion: 0.1.0\nSourcePath: source\nMain: hi\nEOF\n\n\n\n\n\u7522\u751f\u300csource/hi.ooc\u300d\u9019\u500b\u6a94\n\n\n\u57f7\u884c\n\n\n$ cat \n source/hi.ooc \n EOF\n\nwhat's up ooc\n println()\nEOF\n\n\n\n\n\u89c0\u770b\u76ee\u524d\u8cc7\u6599\u593e\u6a94\u6848\u7d50\u69cb\n\n\n\u57f7\u884c\n\n\n$ tree .\n\n\n\n\n\u986f\u793a\n\n\n.\n\u251c\u2500\u2500 hi.use\n\u2514\u2500\u2500 source\n    \u2514\u2500\u2500 hi.ooc\n\n1 directory, 2 files\n\n\n\n\n\u7de8\u8b6f\n\n\n\u57f7\u884c\n\n\n$ rock\n\n\n\n\n\u6216\u662f\u57f7\u884c\n\n\n$ rock -v\n\n\n\n\n\u5c31\u6703\u7522\u751f\u4e00\u500b\u57f7\u884c\u6a94\u300chi\u300d\u3002\n\n\n\u57f7\u884chi\n\n\n\u57f7\u884c\n\n\n$ ./hi\n\n\n\n\n\u986f\u793a\n\n\nwhat's up ooc\n\n\n\n\n\u984d\u5916\u7522\u751f\u7684\u6a94\u6848\n\n\n\u4e0a\u9762\u7de8\u8b6f\u9664\u4e86\u70ba\u7522\u751f\u300chi\u300d\u9019\u500b\u57f7\u884c\u6a94\uff0c\u9084\u6703\u7522\u751f\u300c.libs\u300d\u548c\u300crock_tmp\u300d\u9019\u5169\u500b\u8cc7\u6599\u593e\uff0c\u9019\u88e1\u9762\u6709\u5f88\u591a\u6a94\u6848\uff0c\u53ef\u4ee5\u6df1\u5165\u7814\u7a76\u3002\n\n\n\u6709\u4e00\u500b\u300crock_tmp/ooc/hi/hi.c\u300d\uff0c\u5c31\u662f\u7de8\u8b6f\u6210c\u7684\u4e3b\u8981\u6a94\u6848\uff0c\u88e1\u9762\u6709\u300cmain\u300d\uff0c\u4e5f\u5c31\u662f\u7a0b\u5f0f\u7684\u9032\u5165\u9ede\u3002\n\n\n\u57f7\u884c\u4e0b\u9762\u7684\u6307\u4ee4\uff0c\u5247\u662f\u53ef\u4ee5\u628a\u9019\u4e9b\u984d\u5916\u7522\u751f\u7684\u6a94\u6848\u522a\u9664\u3002\n\n\n$ rock -x\n\n\n\n\n\u986f\u793a\n\n\nCleaning up outpath and .libs\n\n\n\n\n\u7136\u5f8c\u300c.libs\u300d\u548c\u300crock_tmp\u300d\u9019\u5169\u500b\u8cc7\u6599\u593e\u548c\u88e1\u9762\u7684\u6a94\u6848\uff0c\u5c31\u6703\u88ab\u522a\u9664\u4e86\u3002\n\n\n\u7de8\u8b6f\u4e26\u4e14\u57f7\u884c\n\n\n\u4e5f\u53ef\u4ee5\u76f4\u63a5\u57f7\u884c\n\n\n$ rock -r\n\n\n\n\n\u5c31\u6703\u9032\u884c\u7de8\u8b6f\uff0c\u82e5\u7de8\u8b6f\u6210\u529f\uff0c\u5c31\u6703\u99ac\u4e0a\u57f7\u884c\u300chi\u300d\u3002\n\n\n\u66f4\u591a\u53c3\u8003\n\n\n\n\nooc / \nTutorial\n\n\nooc / \nBasic rock usage\n\n\nooc / \nUsefiles\n\n\nooc / \nAbout rock",
+            "title": "hello ooc"
+        },
+        {
+            "location": "/content/quick-start/hello-ooc/#hello-ooc",
+            "text": "",
+            "title": "hello ooc"
+        },
+        {
+            "location": "/content/quick-start/hello-ooc/#_1",
+            "text": "\u4ecb\u7d39\u5982\u4f55\u958b\u59cb\u64b0\u5beb\u7de8\u8b6fooc\u3002",
+            "title": "\u8aaa\u660e"
+        },
+        {
+            "location": "/content/quick-start/hello-ooc/#_2",
+            "text": "",
+            "title": "\u64cd\u4f5c\u6b65\u9a5f"
+        },
+        {
+            "location": "/content/quick-start/hello-ooc/#hellohellosource",
+            "text": "\u57f7\u884c  $ mkdir hello/source -p",
+            "title": "\u5efa\u7acb\u300chello\u300d\u9019\u500b\u300c\u5c08\u6848\u8cc7\u6599\u593e\u300d\u548c\u300chello/source\u300d\u9019\u500b\u8cc7\u6599\u593e"
+        },
+        {
+            "location": "/content/quick-start/hello-ooc/#hello",
+            "text": "\u57f7\u884c  $ cd hello",
+            "title": "\u5207\u63db\u5230\u300chello\u300d\u9019\u500b\u8cc7\u6599\u593e"
+        },
+        {
+            "location": "/content/quick-start/hello-ooc/#hiuse",
+            "text": "\u57f7\u884c  $ cat   hi.use   EOF\nName: Hello\nDescription: Nice to meet ooc!\nVersion: 0.1.0\nSourcePath: source\nMain: hi\nEOF",
+            "title": "\u7522\u751f\u300chi.use\u300d\u9019\u500b\u6a94"
+        },
+        {
+            "location": "/content/quick-start/hello-ooc/#sourcehiooc",
+            "text": "\u57f7\u884c  $ cat   source/hi.ooc   EOF what's up ooc  println()\nEOF",
+            "title": "\u7522\u751f\u300csource/hi.ooc\u300d\u9019\u500b\u6a94"
+        },
+        {
+            "location": "/content/quick-start/hello-ooc/#_3",
+            "text": "\u57f7\u884c  $ tree .  \u986f\u793a  .\n\u251c\u2500\u2500 hi.use\n\u2514\u2500\u2500 source\n    \u2514\u2500\u2500 hi.ooc\n\n1 directory, 2 files",
+            "title": "\u89c0\u770b\u76ee\u524d\u8cc7\u6599\u593e\u6a94\u6848\u7d50\u69cb"
+        },
+        {
+            "location": "/content/quick-start/hello-ooc/#_4",
+            "text": "\u57f7\u884c  $ rock  \u6216\u662f\u57f7\u884c  $ rock -v  \u5c31\u6703\u7522\u751f\u4e00\u500b\u57f7\u884c\u6a94\u300chi\u300d\u3002",
+            "title": "\u7de8\u8b6f"
+        },
+        {
+            "location": "/content/quick-start/hello-ooc/#hi",
+            "text": "\u57f7\u884c  $ ./hi  \u986f\u793a  what's up ooc",
+            "title": "\u57f7\u884chi"
+        },
+        {
+            "location": "/content/quick-start/hello-ooc/#_5",
+            "text": "\u4e0a\u9762\u7de8\u8b6f\u9664\u4e86\u70ba\u7522\u751f\u300chi\u300d\u9019\u500b\u57f7\u884c\u6a94\uff0c\u9084\u6703\u7522\u751f\u300c.libs\u300d\u548c\u300crock_tmp\u300d\u9019\u5169\u500b\u8cc7\u6599\u593e\uff0c\u9019\u88e1\u9762\u6709\u5f88\u591a\u6a94\u6848\uff0c\u53ef\u4ee5\u6df1\u5165\u7814\u7a76\u3002  \u6709\u4e00\u500b\u300crock_tmp/ooc/hi/hi.c\u300d\uff0c\u5c31\u662f\u7de8\u8b6f\u6210c\u7684\u4e3b\u8981\u6a94\u6848\uff0c\u88e1\u9762\u6709\u300cmain\u300d\uff0c\u4e5f\u5c31\u662f\u7a0b\u5f0f\u7684\u9032\u5165\u9ede\u3002  \u57f7\u884c\u4e0b\u9762\u7684\u6307\u4ee4\uff0c\u5247\u662f\u53ef\u4ee5\u628a\u9019\u4e9b\u984d\u5916\u7522\u751f\u7684\u6a94\u6848\u522a\u9664\u3002  $ rock -x  \u986f\u793a  Cleaning up outpath and .libs  \u7136\u5f8c\u300c.libs\u300d\u548c\u300crock_tmp\u300d\u9019\u5169\u500b\u8cc7\u6599\u593e\u548c\u88e1\u9762\u7684\u6a94\u6848\uff0c\u5c31\u6703\u88ab\u522a\u9664\u4e86\u3002",
+            "title": "\u984d\u5916\u7522\u751f\u7684\u6a94\u6848"
+        },
+        {
+            "location": "/content/quick-start/hello-ooc/#_6",
+            "text": "\u4e5f\u53ef\u4ee5\u76f4\u63a5\u57f7\u884c  $ rock -r  \u5c31\u6703\u9032\u884c\u7de8\u8b6f\uff0c\u82e5\u7de8\u8b6f\u6210\u529f\uff0c\u5c31\u6703\u99ac\u4e0a\u57f7\u884c\u300chi\u300d\u3002",
+            "title": "\u7de8\u8b6f\u4e26\u4e14\u57f7\u884c"
+        },
+        {
+            "location": "/content/quick-start/hello-ooc/#_7",
+            "text": "ooc /  Tutorial  ooc /  Basic rock usage  ooc /  Usefiles  ooc /  About rock",
+            "title": "\u66f4\u591a\u53c3\u8003"
         }
     ]
 }

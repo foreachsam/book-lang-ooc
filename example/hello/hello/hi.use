@@ -1,0 +1,5 @@
+Name: Hello
+Description: Nice to meet ooc!
+Version: 0.1.0
+SourcePath: source
+Main: hi

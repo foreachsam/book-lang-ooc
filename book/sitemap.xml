@@ -4,7 +4,7 @@
     
     <url>
      <loc>https://foreachsam.github.io/book-lang-ooc/book/</loc>
-     <lastmod>2016-09-17</lastmod>
+     <lastmod>2016-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,7 +13,7 @@
         
     <url>
      <loc>https://foreachsam.github.io/book-lang-ooc/book/content/reference/manual/</loc>
-     <lastmod>2016-09-17</lastmod>
+     <lastmod>2016-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -23,7 +23,17 @@
         
     <url>
      <loc>https://foreachsam.github.io/book-lang-ooc/book/content/command/rock/</loc>
-     <lastmod>2016-09-17</lastmod>
+     <lastmod>2016-09-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>https://foreachsam.github.io/book-lang-ooc/book/content/quick-start/hello-ooc/</loc>
+     <lastmod>2016-09-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

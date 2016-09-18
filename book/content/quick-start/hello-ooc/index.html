@@ -11,19 +11,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
 
-<title>manual - ooc 學習筆記</title>
+<title>hello ooc - ooc 學習筆記</title>
 
 
-<link rel="canonical" href="https://foreachsam.github.io/book-lang-ooc/book/content/reference/manual/">
+<link rel="canonical" href="https://foreachsam.github.io/book-lang-ooc/book/content/quick-start/hello-ooc/">
 
 
 <meta name="author" content="foreachsam">
 
 
-<meta property="og:url" content="https://foreachsam.github.io/book-lang-ooc/book/content/reference/manual/">
-<meta property="og:title" content="manual - ooc 學習筆記">
+<meta property="og:url" content="https://foreachsam.github.io/book-lang-ooc/book/content/quick-start/hello-ooc/">
+<meta property="og:title" content="hello ooc - ooc 學習筆記">
 
-<meta name="apple-mobile-web-app-title" content="manual - ooc 學習筆記">
+<meta name="apple-mobile-web-app-title" content="hello ooc - ooc 學習筆記">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">  
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../../assets/images/favicon.ico">
@@ -91,10 +91,10 @@
 				<span class="path">
             
               
-                參考文件 <i class="icon icon-link"></i>
+                quick start <i class="icon icon-link"></i>
               
             
-          </span>  manual
+          </span>  hello ooc
 			</div>
 		</div>
 		  
@@ -161,23 +161,11 @@
 			
 <li>
 	<div itemscope itemtype="http://schema.org/Article">
-		<a class="current" title="manual" href="./" itemprop="url">
+		<a class="" title="manual" href="../../reference/manual/" itemprop="url">
 			manual
     	</a>
 	</div>
-	    
-	<ul>
-		
-		<li class="anchor" >
-			<div itemscope itemtype="http://schema.org/Article">
-				<a title="閱讀文件" href="#_1" >
-                	閱讀文件
-				</a>
-			</div>
-		</li>
-		
-	</ul>
-	 
+	
 </li>
 
 
@@ -217,11 +205,39 @@
 			
 <li>
 	<div itemscope itemtype="http://schema.org/Article">
-		<a class="" title="hello ooc" href="../../quick-start/hello-ooc/" itemprop="url">
+		<a class="current" title="hello ooc" href="./" itemprop="url">
 			hello ooc
     	</a>
 	</div>
-	
+	    
+	<ul>
+		
+		<li class="anchor" >
+			<div itemscope itemtype="http://schema.org/Article">
+				<a title="說明" href="#_1" >
+                	說明
+				</a>
+			</div>
+		</li>
+		
+		<li class="anchor" >
+			<div itemscope itemtype="http://schema.org/Article">
+				<a title="操作步驟" href="#_2" >
+                	操作步驟
+				</a>
+			</div>
+		</li>
+		
+		<li class="anchor" >
+			<div itemscope itemtype="http://schema.org/Article">
+				<a title="更多參考" href="#_7" >
+                	更多參考
+				</a>
+			</div>
+		</li>
+		
+	</ul>
+	 
 </li>
 
 
@@ -251,12 +267,95 @@
 		</div>
 		<article class="article">
 			<div class="wrapper">
-				 <h1 id="manual">manual</h1>
-<h2 id="_1">閱讀文件</h2>
+				 <h1 id="hello-ooc">hello ooc</h1>
+<h2 id="_1">說明</h2>
+<p>介紹如何開始撰寫編譯ooc。</p>
+<h2 id="_2">操作步驟</h2>
+<h3 id="hellohellosource">建立「hello」這個「專案資料夾」和「hello/source」這個資料夾</h3>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ mkdir hello/source -p</code></pre>
+
+
+<h3 id="hello">切換到「hello」這個資料夾</h3>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ cd hello</code></pre>
+
+
+<h3 id="hiuse">產生「hi.use」這個檔</h3>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ cat &gt; hi.use &lt;&lt; EOF
+Name: Hello
+Description: Nice to meet ooc!
+Version: 0.1.0
+SourcePath: source
+Main: hi
+EOF</code></pre>
+
+
+<h3 id="sourcehiooc">產生「source/hi.ooc」這個檔</h3>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ cat &gt; source/hi.ooc &lt;&lt; EOF
+&quot;what's up ooc&quot; println()
+EOF</code></pre>
+
+
+<h3 id="_3">觀看目前資料夾檔案結構</h3>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ tree .</code></pre>
+
+
+<p>顯示</p>
+<pre class="code"><code class="language-sh">.
+├── hi.use
+└── source
+    └── hi.ooc
+
+1 directory, 2 files</code></pre>
+
+
+<h3 id="_4">編譯</h3>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ rock</code></pre>
+
+
+<p>或是執行</p>
+<pre class="code"><code class="language-sh">$ rock -v</code></pre>
+
+
+<p>就會產生一個執行檔「hi」。</p>
+<h3 id="hi">執行hi</h3>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ ./hi</code></pre>
+
+
+<p>顯示</p>
+<pre class="code"><code>what's up ooc</code></pre>
+
+
+<h3 id="_5">額外產生的檔案</h3>
+<p>上面編譯除了為產生「hi」這個執行檔，還會產生「.libs」和「rock_tmp」這兩個資料夾，這裡面有很多檔案，可以深入研究。</p>
+<p>有一個「rock_tmp/ooc/hi/hi.c」，就是編譯成c的主要檔案，裡面有「main」，也就是程式的進入點。</p>
+<p>執行下面的指令，則是可以把這些額外產生的檔案刪除。</p>
+<pre class="code"><code class="language-sh">$ rock -x</code></pre>
+
+
+<p>顯示</p>
+<pre class="code"><code>Cleaning up outpath and .libs</code></pre>
+
+
+<p>然後「.libs」和「rock_tmp」這兩個資料夾和裡面的檔案，就會被刪除了。</p>
+<h3 id="_6">編譯並且執行</h3>
+<p>也可以直接執行</p>
+<pre class="code"><code class="language-sh">$ rock -r</code></pre>
+
+
+<p>就會進行編譯，若編譯成功，就會馬上執行「hi」。</p>
+<h2 id="_7">更多參考</h2>
 <ul>
-<li>ooc / <a href="https://ooc-lang.org/docs/">Documentation</a></li>
-<li>GitHub / ooc-lang / ooc-lang.github.io / <a href="https://github.com/ooc-lang/ooc-lang.github.io/tree/master/docs">docs</a></li>
-<li>GitHub / ooc-lang / <a href="https://github.com/ooc-lang/the-ooc-language">the-ooc-language</a></li>
+<li>ooc / <a href="https://ooc-lang.org/docs/tutorial/">Tutorial</a></li>
+<li>ooc / <a href="https://ooc-lang.org/docs/tools/rock/basic/">Basic rock usage</a></li>
+<li>ooc / <a href="https://ooc-lang.org/docs/tools/rock/usefiles/">Usefiles</a></li>
+<li>ooc / <a href="https://ooc-lang.org/docs/tools/rock/">About rock</a></li>
 </ul>
 				<aside class="copyright" role="note">
 					 Copyright (c) foreachsam &ndash;  Documentation built with
@@ -271,7 +370,7 @@
 <nav class="pagination" aria-label="Footer">
 	<div class="previous">
 		
-		<a href="../../.." title="首頁">
+		<a href="../../command/rock/" title="rock">
 			<span class="direction">
             上一頁
           </span>
@@ -281,7 +380,7 @@
 				</div>
 				<div class="stretch">
 					<div class="title">
-						首頁
+						rock
 					</div>
 				</div>
 			</div>
@@ -289,22 +388,6 @@
 		
 	</div>
 	<div class="next">
-		
-		<a href="../../command/rock/" title="rock">
-			<span class="direction">
-            下一頁
-          </span>
-			<div class="page">
-				<div class="stretch">
-					<div class="title">
-						rock
-					</div>
-				</div>
-				<div class="button button-next" role="button" aria-label="Next">
-					<i class="icon icon-forward"></i>
-				</div>
-			</div>
-		</a>
 		
 	</div>
 </nav>
