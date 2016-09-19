@@ -58,10 +58,6 @@ DirWalk: class {
 
 walk := DirWalk new()
 
-//dir :=
-//dir := "/tmp"
-//dir := "."
-
 // ## string argument
 walk run(".")
 //walk run("/tmp")
@@ -73,4 +69,3 @@ walk run(".")
 //walk run(File new(Env get("HOME")))
 //walk run(File new(Env get("HOME"), ".config"))
 //walk run(File new(Env get("HOME", "/home/user"), ".config"))
-

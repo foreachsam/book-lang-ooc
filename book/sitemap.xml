@@ -37,6 +37,12 @@
      <changefreq>daily</changefreq>
     </url>
         
+    <url>
+     <loc>https://foreachsam.github.io/book-lang-ooc/book/content/quick-start/dir-walk/</loc>
+     <lastmod>2016-09-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
 </urlset>
