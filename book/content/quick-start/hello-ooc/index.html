@@ -270,6 +270,7 @@
 				 <h1 id="hello-ooc">hello ooc</h1>
 <h2 id="_1">說明</h2>
 <p>介紹如何開始撰寫編譯ooc。</p>
+<p>「<a href="https://github.com/foreachsam/book-lang-ooc/tree/gh-pages/example/hello/hello">範例連結</a>」。</p>
 <h2 id="_2">操作步驟</h2>
 <h3 id="hellohellosource">建立「hello」這個「專案資料夾」和「hello/source」這個資料夾</h3>
 <p>執行</p>
@@ -281,7 +282,7 @@
 <pre class="code"><code class="language-sh">$ cd hello</code></pre>
 
 
-<h3 id="hiuse">產生「hi.use」這個檔</h3>
+<h3 id="hiuse">產生「<a href="https://github.com/foreachsam/book-lang-ooc/blob/gh-pages/example/hello/hello/hi.use">hi.use</a>」這個檔</h3>
 <p>執行</p>
 <pre class="code"><code class="language-sh">$ cat &gt; hi.use &lt;&lt; EOF
 Name: Hello
@@ -292,7 +293,7 @@ Main: hi
 EOF</code></pre>
 
 
-<h3 id="sourcehiooc">產生「source/hi.ooc」這個檔</h3>
+<h3 id="sourcehiooc">產生「<a href="https://github.com/foreachsam/book-lang-ooc/blob/gh-pages/example/hello/hello/source/hi.ooc">source/hi.ooc</a>」這個檔</h3>
 <p>執行</p>
 <pre class="code"><code class="language-sh">$ cat &gt; source/hi.ooc &lt;&lt; EOF
 &quot;what's up ooc&quot; println()
@@ -350,6 +351,16 @@ EOF</code></pre>
 
 
 <p>就會進行編譯，若編譯成功，就會馬上執行「hi」。</p>
+<h3 id="useooc">不需要use檔，直接編譯ooc檔</h3>
+<p>也可以直接執行</p>
+<pre class="code"><code class="language-sh">$ rock source/hi.ooc</code></pre>
+
+
+<p>或是執行</p>
+<pre class="code"><code class="language-sh">$ rock source/hi.ooc -v</code></pre>
+
+
+<p>就會進行編譯</p>
 <h2 id="_7">更多參考</h2>
 <ul>
 <li>ooc / <a href="https://ooc-lang.org/docs/tutorial/">Tutorial</a></li>
