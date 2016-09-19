@@ -1,0 +1,5 @@
+Name: DirWalk
+Description: Demo Dir Walk
+Version: 0.1.0
+SourcePath: source
+Main: dir-walk

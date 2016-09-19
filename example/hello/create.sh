@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 
 ## 建立「hello」這個「專案資料夾」和「hello/source」這個資料夾
 mkdir hello/source -p
